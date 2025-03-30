@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "canbus_tire_temp_sensor")(type "KiCad")(uri "${KIPRJMOD}/project_libraries/canbus_tire_temp_sensor.kicad_sym")(options "")(descr ""))
+)
