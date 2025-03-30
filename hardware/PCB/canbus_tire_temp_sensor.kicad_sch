@@ -3332,7 +3332,7 @@
     (uuid e1695a73-b49f-4d61-a6b4-7f4c0deb5b95)
     (property "Reference" "J1" (id 0) (at 54.61 64.77 0))
     (property "Value" "TC2030" (id 1) (at 57.15 82.55 0))
-    (property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical" (id 2) (at 57.15 72.39 0)
+    (property "Footprint" "" (id 2) (at 57.15 72.39 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 57.15 72.39 0)
@@ -3679,7 +3679,7 @@
       (reference "D5") (unit 1) (value "NUP2105L") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/e1695a73-b49f-4d61-a6b4-7f4c0deb5b95"
-      (reference "J1") (unit 1) (value "TC2030") (footprint "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical")
+      (reference "J1") (unit 1) (value "TC2030") (footprint "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical")
     )
     (path "/e50c8539-9931-4edc-af04-1179e90eaec9"
       (reference "J2") (unit 1) (value "0430450423") (footprint "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal")
