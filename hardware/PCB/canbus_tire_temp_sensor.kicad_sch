@@ -3495,7 +3495,7 @@
 		)
 		(uuid "d4b7535d-26d7-448d-9ab0-3a8da52b3f70")
 	)
-	(text "Molex-Microfit 3.0\n\nMating Plug: 0430250400\nMating Plug Terminals: 0430300001"
+	(text "Molex Zero-Hatchi\n\nMating Assembly: 2263921043"
 		(exclude_from_sim no)
 		(at 128.27 135.89 0)
 		(effects
@@ -5606,7 +5606,7 @@
 		)
 		(uuid "721d221f-f694-430a-b9a4-f4b097f4de1d")
 	)
-	(label "CAN_P"
+	(label "CAN_N"
 		(at 137.16 147.32 0)
 		(effects
 			(font
@@ -5676,7 +5676,7 @@
 		)
 		(uuid "aeb8dcb3-28df-4f75-8832-e50238d40282")
 	)
-	(label "CAN_N"
+	(label "CAN_P"
 		(at 137.16 149.86 0)
 		(effects
 			(font
@@ -9171,7 +9171,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-39-4_Window"
+		(property "Footprint" "canbus_tire_temp_sensor:MLX90641"
 			(at 228.6 146.05 0)
 			(effects
 				(font
@@ -10462,7 +10462,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0430450423"
+		(property "Value" "2147210040"
 			(at 151.13 147.3199 0)
 			(effects
 				(font
@@ -10471,7 +10471,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0421_2x02-1MP_P3.00mm_Horizontal"
+		(property "Footprint" "canbus_tire_temp_sensor:Molex_Zero_Hatchi_2147210040"
 			(at 148.59 144.78 0)
 			(effects
 				(font
