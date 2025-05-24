@@ -265,7 +265,7 @@
 		(uuid "981901a7-af3f-4131-bd82-362c67dffb50")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/project_libraries/3d_models/2147210040.stp"
+	(model "${KIPRJMOD}/project_libraries/3d_models/molex_zero_hatchi_2147210040.step"
 		(offset
 			(xyz 0 -3 0)
 		)
