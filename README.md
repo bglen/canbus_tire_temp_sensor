@@ -22,8 +22,8 @@ This device outputs thermal camera data to CAN bus. It does not include terminat
 | ---------- | -------- | --------------------------- |
 | 1          | VCC      | Input voltage, 4.5 - 40 VDC |
 | 2          | GND      | Ground                      |
-| 3          | CAN_N    | CAN bus high                |
-| 4          | CAN_P    | CAN bus low                 |
+| 3          | CAN_N    | CAN bus low                 |
+| 4          | CAN_P    | CAN bus high                |
 
 ### Default CAN Message IDs
 
