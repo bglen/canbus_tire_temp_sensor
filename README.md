@@ -4,8 +4,17 @@ Tire temperature sensing with IR sensor arrays and a CAN bus interface
 
 ![PCB render](/hardware/PCB/production/images/version_1_1.png)
 
+### To Do
+* CAD enclosure
+* CAN Message Data Frame Description
+* Firmware
+* Adjust PCB design for PCBA
+
+## Building the Hardware
+The gerber files for ordering boards can be found in the /production/ folder. A Digikey List for easy BOM ordering can be found [here](https://www.digikey.com/en/mylists/list/VY1O0SBB26).
+
 ## Usage
-This device outputs thermal camera data to CAN bus. It does not include termination resistors, so only include it at the beginning or end of the network with an external termination resistor.
+This device outputs thermal camera data to CAN bus. It does not include termination resistors, so only include it at the beginning or end of the network with an external 120 ohm termination resistor.
 
 ### Pinout
 
