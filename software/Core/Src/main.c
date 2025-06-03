@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "can.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -95,15 +96,44 @@ int main(void)
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
 
-  /* USER CODE END 2 */
+  /* Initialize CAN application module */
+  if (CANAPP_Init(CAN_DEFAULT_BASE_ID, 1000000) != HAL_OK)
+  {
+    Error_Handler();
+  }
 
-  /* Infinite loop */
+  /* USER CODE END 2 */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    static uint32_t lastTx = 0;
+    uint8_t data[8] = {0};
+
+    if (HAL_GetTick() - lastTx >= 100)
+    {
+      uint32_t base = CANAPP_GetBaseID();
+      CANAPP_Send(base + 1, data, 8);
+      CANAPP_Send(base + 2, data, 8);
+      CANAPP_Send(base + 3, data, 8);
+      CANAPP_Send(base + 4, data, 8);
+      lastTx = HAL_GetTick();
+    }
+
+    CAN_RxHeaderTypeDef rxHeader;
+    uint8_t rxData[8];
+    if (CANAPP_Receive(&rxHeader, rxData) == HAL_OK)
+    {
+      if (rxHeader.StdId == CAN_CONFIG_MSG_ID && rxHeader.DLC >= 6)
+      {
+        uint32_t newBase = (rxData[0] << 8) | rxData[1];
+        uint32_t newBaud = (rxData[2] << 24) | (rxData[3] << 16) |
+                            (rxData[4] << 8) | rxData[5];
+        CANAPP_UpdateConfig(newBase, newBaud);
+      }
+    }
   }
   /* USER CODE END 3 */
 }
