@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "CAN Bus Tire Temperature Sensor")
-		(date "2025-03-29")
-		(rev "AA")
+		(date "2025-06-11")
+		(rev "1.3")
 		(company "Brian Glen")
 	)
 	(lib_symbols
